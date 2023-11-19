@@ -1,0 +1,8 @@
+<p>songs-list works!</p>
+
+<ul>
+   <li *ngFor="let song of arrSongs()" [routerLink]="['/songs',song._id]">
+      {{song.title}}
+   </li>
+   
+</ul>
